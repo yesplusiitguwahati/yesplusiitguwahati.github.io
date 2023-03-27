@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes+!IITG</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+</head>
+<style>
+@media screen and (min-width:992px){
+    .testimonial-image{
+  width:10%;
+  border-radius:100%;
+  margin:20px;
+}
+
+
+
+}
+@media screen and (max-width:992px){
+
+    #benifits{
+    text-align:center;
+}
+.testimonial-image{
+  width:20%;
+  border-radius:100%;
+  margin:20px;
+}
+
+}
+    body{
+        margin:0;
+
+    }
+
+#instructors img{
+    width:100%;
+}
+@media screen and (max-width: 750px) {
+    #primetext{
+        width:100%;
+        font-size:3vw;
+    }
+    
+#pagemainprime{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    }
+
+  
+}
+#meditation{
+    float:right;
+    width:50vw;
+}
+@media screen and (min-width: 750px) {
+    #meditation{
+        width:30vw;
+    }
+    #pagemainprime{
+    width:100%;
+    display:flex;
+    
+
+}
+#primetext{
+        
+        font-size:1.5vw;
+    }
+  
+}
+#pagemain{
+    background-image:url('images/d.png');
+    background-repeat: no-repeat;
+    width:100%;
+    height:700px;
+    background-size:cover;
+}
+#logos{
+    
+    
+}
+#logos img{
+  height:80px;
+  margin-top:20px;
+}
+
+
+.batches{
+    width:300px;
+    height:200px;
+    border:2px solid green;
+    border-radius:50px;
+    margin:30px;
+    
+   
+}
+#registration{
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+#testimonials{
+  text-align:center;
+  background-color:;
+  color:black;
+}
+
+#instructors{
+    
+}
+#instructorscontainer{
+    
+    padding:3%;
+    
+}
+.instructorimage{
+   
+}
+.instructordescription{
+    
+
+}
+.instructorimage img{
+    height:300px;
+    width:290px;
+}
+small:hover{
+    cursor:pointer;
+}
+#footer{
+    height:250px;
+    width:100%;
+    
+    background-color:black;
+    color:white;
+    padding-top:50px;
+}
+#valueadded{
+    padding-top:5%;
+    padding-bottom:5%;
+}
+#valueadded div{
+    padding:2% 2.5% 2% 2.5%;
+}
+.theboxes{
+    border:1px solid#d3d3d3 ;
+    padding:2%;
+    margin:2%;
+    border-radius:25px;
+}
+
+#dancing_hormones{
+    margin-top:15%;
+}
+#dancing_hormones_text{
+    
+    
+}
+#instructors{
+    margin-top:15%;
+}
+
+#instructors .row{
+    margin-top:5%;
+}
+#instructors h1{
+    text-align:center;
+}
+#instructors .row img{
+    padding:10%;
+}
+.speech-bubble-container1{
+    margin-top:5%;
+}
+.speech-bubble-container1 p {
+	
+	position: relative;
+	max-width: 30em;
+	
+	
+	background-color: #fff;
+	padding: 1.125em 1.5em;
+	font-size: 1.25em;
+	border-radius: 1rem;
+  box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+}
+
+.speech-bubble-container1 p::before {
+	
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	bottom: 100%;
+	left: 45%; 
+	border: .75rem solid transparent;
+	border-top: none;
+
+	
+	border-bottom-color: #fff;
+	filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
+}
+
+.speech-bubble-container2{
+    margin-top:5%;
+}
+.speech-bubble-container2 p {
+	
+	position: relative;
+	max-width: 30em;
+	
+	
+	background-color: #fff;
+	padding: 1.125em 1.5em;
+	font-size: 1.25em;
+	border-radius: 1rem;
+  box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+}
+
+.speech-bubble-container2 p::before {
+	
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	bottom: 100%;
+	left: 45%; 
+	border: .75rem solid transparent;
+	border-top: none;
+
+	
+	border-bottom-color: #fff;
+	filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
+}
+
+.speech-bubble-container3{
+    margin-top:5%;
+}
+.speech-bubble-container3 p {
+	
+	position: relative;
+	max-width: 30em;
+	
+	
+	background-color: #fff;
+	padding: 1.125em 1.5em;
+	font-size: 1.25em;
+	border-radius: 1rem;
+  box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+}
+
+.speech-bubble-container3 p::before {
+	
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	bottom: 100%;
+	left: 45%; 
+	border: .75rem solid transparent;
+	border-top: none;
+
+	
+	border-bottom-color: #fff;
+	filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
+}
+
+
+#studentchapter{
+    margin-top:15%;
+    width:100%;
+    background-color:#FFDC8E;
+}
+#studentchapterinside div{
+    margin-left:1%;
+}
+#studentchapterinside{
+    padding-top:6%;
+    padding-bottom:6%;
+}
+#testimonials{
+    margin-top:15%;
+}
+#registrationdetails{
+    width:100%;
+    background-color:#FFDC8E;
+}
+
+#registrationinside{
+     padding-top:5%;
+    padding-bottom:5%;
+}
+#researchbox img{
+    width:300px;
+}
+
+#researchinsights{
+    padding-top:10%;
+}
+
+#benifits{
+    background-color:#FFDC8E;
+    margin-top:15%;
+}
+
+#queries{
+    margin-top:15%;
+}
+
+.benifitsinside img{
+   width:100%;
+}
+</style>
+<body>
+    <div id="pagemain" >
+        <div class="container">
+            <div id="logos">
+                <div style="float:left">
+                    <img src="images/logo_iitg.png"></imng>
+                </div>
+                <div style="float:right">
+                    <img src="images/yespluslogo.png">
+                </div>
+            </div>
+            <div id="pagemainprime">
+                <div id="primetext" style="color:black;">
+                  <h1 style="margin-top:10%;">
+                      Tap Into Your Mind's True Potential
+                  </h1>
+                  <p>
+                      Whatever they told you to get here is right! It worked for  
+                      155 million people across the world and now you have a chance 
+                      to experience the same magic at your own campus!
+                  </p>
+                  <a href="#registration"><button type="button" class="btn btn-success" style="border-radius:100px;margin-top:5%; ">Register Now</button></a>
+                  
+                </div>
+                <div id ="primeimage">
+                    <img src="images/meditation.png" id="meditation">
+                </div>
+            </div>
+        </div>
+    </div>
+      <div class="container" id ="dancing_hormones">
+          <div class="row">
+              <div class="col-lg-6">
+                <iframe width="100%" height="300px" max-width="450"  src="https://drive.google.com/file/d/11Xr-C2PX8oFKJqpNDFdCnnVvSS3Xcgzl/preview" allowfullscreen="true"></iframe>
+              </div>
+              <div class="col-lg-6" id="dancing_hormones_text">
+                  <p>
+                    Human behaviour is nothing but the dance 
+                    of hormones.Regular Practice of
+                    Sudarshan Kriya stimulates happy
+                    hormones and decrease stress
+                    hormones.This improves sleep
+                    quality, focus, public
+                    behaviour, perfomance in
+                    academics,extra-cirriculars etc.
+                    
+                    
+                    
+                    
+                  </p>
+              </div>
+              
+            </div>
+            <div class="row">
+                  
+                <div style="text-align:center" class="col-md-6"><span ><a href="#registration"><button type="button" class="btn btn-success" style="border-radius:100px;margin-top:5%; ">I want to learn this</button></a></span></div>
+            
+            </div>
+      </div>
+    <div class="container" style='text-align:center;padding-top:10%;' id="reasearchinsights">
+        <h2><strong>Here are some research insights</strong></h2>
+        <div class="row">
+            <div class="col-lg" id="researchbox">
+               <img src="images/r1.png">
+            </div>
+            <div class="col-lg" id="researchbox">
+                <img src="images/r2.png">
+            </div>
+            <div class="col-lg" id="researchbox">
+                  <img src="images/r3.png">
+            </div>
+        </div>
+        <p>In Summary, Sudarshan Kriya uses specific cyclic, rhythmic patterns of breath to bring the mind and body into a relaxed, yet energized state. Its effects have been studied in open and randomized trials, both in healthy and health compromised populations.</p>
+        <p><i>For extensive papers and bibliography, visit this website : <a href="https://www.artofliving.org/in-en/research-sudarshan-kriya">RESEARCH ON SKY TECHNIQUE</a></i></p>
+        <div class="row">
+                  
+            <div style="text-align:center" class="col-md-12"><span ><a href="#registration"><button type="button" class="btn btn-success" style="border-radius:100px;margin-top:5%; ">Sign me up right away</button></a></span></div>
+        
+        </div>
+    </div> 
+
+  <div id="studentchapter">
+      <div class="container" >
+        <div id="studentchapterinside">
+          <h1><strong>About Yes+! IITG Student Chapter</strong></h1>
+
+          <div>
+              <h3>History</h3>
+              <p>The Yes!+Student Chapter has been driving numerous activities in IITG for the past 10 years. 
+                It gives experiential learning with an integrated framework to excel in various aspects of life along with a higher sense of responsibility. 
+            
+            Once you have enrolled for the workshop, you become part of a community of 1000+ Students, Faculty Members, and Alumni. </p>
+              <h3>Daily Morning Group Yoga and Meditation</h3>
+              <p>We have Daily Morning Group Sessions, where we practise the breathing techniques taught in the 4-Day Course.</p>
+              <h3>Weekly Follow Ups
+            </h3>
+            <p>Weekly follow-ups are a personal favorite of everyone!</p>  
+            <h3>and more.....</h3>
+              <p>We have Musical Evenings, Social Service Projects and other fun activities too!</p>
+              <p>All-in-all, your life here in college, and out there in the real world becomes a celebration once you experience the benefits of the techniques taught in the course. Problems no longer stay problems, but they turn into Challenges!
+                This Can-DO!​attitude is what gets cultivated when you realize the bigger picture!</p>
+            </div>
+            <div class="row">
+                  
+                <div style="text-align:center" class="col-md-12"><span ><a href="#registration"><button type="button" class="btn btn-success" style="border-radius:100px;margin-top:5%; ">Register Now</button></a></span></div>
+            
+            </div>
+        </div>
+      </div>
+  </div>
+  <div id="instructors" class="container">
+      <h1><strong>Know Your Instructors</strong></h1>
+      <div class="row">
+          <div class="col-lg">
+            <img src="images/suvidhamalhotra.jpeg" class="rounded-circle z-depth-2" alt="Dr.Virat Chirania">
+            <h2 style="text-align:center">Suvidha Agarwal</h2>
+            <div class="speech-bubble-container2">
+                <p>Suvidha Agarwal, Senior Actuairal Analyst, AON Hewitt, is currently a Youth and Corporate Trainer, Life Coach, and a Craniosacral Therapy Practitioner. She has been mentoring Youth teaching various AOL Workshops and imparting Soft Skills training all across the country - Amity University, BITS Pilani, Manipal University, SMS Medical College.
+                     </p>
+                 </div>
+
+          </div>
+          <div class="col-lg">
+            <img src="images/vivekagarwal.jpeg" class="rounded-circle z-depth-2" alt="Dr.Virat Chirania">
+            <h2 style="text-align:center">Vivek Agarwal</h2>
+            <div class="speech-bubble-container3">
+                <p>Vivek Agarwal, Ex-Business Consultant, NSW DET, Australia, is an International AOL faculty, Youth Mentor, Life Coach, Corporate Trainer and has taught various excellence programs in Corporate Sector with SBI, Aircel, HDFC, ITC. He has been leading 'Mind-Management' sessions for both faculties as well as students in AIIMS, , Manipal University, LNMIIT, IIHMR, Mody University to name a few. </p>
+                 </div>
+          </div>
+      </div>
+  </div>
+
+
+          
+  
+          
+              
+  <section id="testimonials" class="container">
+    <h1 style="text-align:center">
+        <strong> What people of IITG have to say</strong>
+     </h1>
+    <div id="testimonial-carousal" class="carousel slide" data-ride="carousel" style="margin-top:5%;" data-interval="8000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h5>"For me, the craziest thing happened after the workshop. In 4 days, my anger was gone! Just like that, I became so much more peaceful and centered. The funniest thing was I started smiling without any reason... reminded me of childhood days!"
+    </h5>
+      <img class="testimonial-image"src="images/testimonials/1.png" alt="">
+      <p><em>Rohit Priyanka Nandwani<br>
+         B.Tech(3rd Year)</em>
+    </div>
+    <div class="carousel-item" class="container">
+        <h5>"This course has made me a more confident person, ready to face any challenge with a smile. It helps in dealing with people and situations in a more matured way. I feel more energetic and healthy by doing the practices taught in this course on a regular basis. Truly 'Youth Empowerment' which all youths should experience!"</h5>
+        <img class="testimonial-image" src="images/testimonials/deepikabishnoi.png" alt="">
+        <p><em>Deepika Bishnoi
+            <br>
+            PhD - Energy, Project fellow - ABB, Titan
+</em></p>
+
+    </div>
+    <div class="carousel-item">
+        <h5>"I experienced the best days of my life in the course. Increased focus levels, energy levels, physical stamina etc are some of the benefits I got from the course.
+            Simply, life before yesplus = noise. Life after yesplus = music."</h5>
+        <img class="testimonial-image" src="images/testimonials/ramesh.png" alt="">
+        <p><em>Bagadi Venkat Ramesh
+
+            <br>
+            B.Tech(2nd Year)
+</em></p>
+
+    </div>
+    <div class="carousel-item">
+        <h5>"Practising the breathing exercises taught in the workshop on a daily basis has helped me in facing challenges (even some tough ones) with a Calm and Peaceful Mind"</h5>
+        <img class="testimonial-image"src="images/testimonials/3.jpg" alt="">
+        <p><em>Hritik Meena
+
+            <br>
+            B.Tech(3rd Year)
+</em></p>
+
+    </div>
+    <div class="carousel-item">
+        <h5>"This course has been one of the best things that ever happened to my life. A few words cannot describe what it really means to me. Starting from a happier self to a more efficient person,I have become a completely different and better person after taking this course."</h5>
+        <img class="testimonial-image"src="images/testimonials/4.jpg" alt="">
+        <p><em>Hrishikesh Boro
+
+            <br>
+            B.Tech(2nd Year)
+</em></p>
+    </div>
+
+  </div>
+  <a class="carousel-control-prev" href="#testimonial-carousal" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#testimonial-carousal" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+ </section>
+              <!--  -->
+          </div>
+        <div id="benifits">
+            <div class="container" style="padding-top:5%;padding-bottom:5%">
+              <h1 style="text-align:center">
+                <strong>What will I get from the workshop?</strong>
+            </h1>
+                <div class="row" style="margin-top:10%;" class="benifitsinside">
+                    <div class="col-lg">
+                         <div class="row">
+                             <div class="col-lg-4">
+                                <center><img src="images/health.png" style="width:50%"></center>
+                             </div>
+                             <div class="col-lg-8">
+                                 <h2>
+                                    <strong>Boost immunity and health</strong>
+                                </h2>
+                                <p>
+                                    Discover effective techniques to reduce the risk of heart disease, boost the immune function & overall energy levels.
+                                </p>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="row">
+                            <div class="col-lg-4">
+                               <center><img src="images/relation.png" style="width:50%"></center>
+                            </div>
+                            <div class="col-lg-8">
+                                <h2>
+                                   <strong>Improve relationships</strong>
+                               </h2>
+                               <p>
+                                Explore keys towards understanding yourself, and people around you better, thus strengthening your professional and personal relationships. 
+                            </p>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="row" style="margin-top:10%;" class="benifitsinside">
+                    <div class="col-lg">
+                         <div class="row">
+                             <div class="col-lg-4">
+                                <center><img src="images/stres.png" style="width:50%"></center>
+                             </div>
+                             <div class="col-lg-8">
+                                 <h2>
+                                    <strong>Relieve stress, anxiety & depression</strong>
+                                </h2>
+                                <p>
+                                    Learn research-backed ways to reduce stress, relieve anxiety & relax even amidst challenges.
+                                </p>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="row">
+                            <div class="col-lg-4">
+                               <center><img src="images/confidence.png" style="height:8rem;"></center>
+                            </div>
+                            <div class="col-lg-8">
+                                <h2>
+                                   <strong>Live with purpose, confidence & joy</strong>
+                               </h2>
+                               <p>
+                                Know the secrets to improve clarity of mind, focus, resilience, creativity, and lead a fulfilling life.
+                               </p>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="row">
+                  
+                    <div style="text-align:center" class="col-md-12"><span ><a href="#registration"><button type="button" class="btn btn-success" style="border-radius:100px;margin-top:5%; ">Sign me up right now</button></a></span></div>
+                
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="container" id="queries">
+            <h1 style="text-align:center">
+               <strong>"I want to join, but…"</strong>
+            </h1>
+
+            <div class="accordion" id="accordionExample" style="margin-top:10%">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <span style="color:black"><strong>Can a four-day workshop really change my life?</strong></span>
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Life can change in a moment. A moment with a loved one or a lost moment of awareness while driving a car can both be life-changing. A “Eureka” moment can be life-changing not only for you but also for the whole world. However, more than changing your life, this workshop equips you with tools to change your life yourself. In these four days, you’ll be learning the Sky Breathing technique™, a widely researched technique adopted by millions globally. Those who have practised it have reported life-transforming experiences.
+
+                        You will also have free lifetime access to follow-up sessions, and a global community of mentors. You can also enroll for advanced programs of the Art of Living. Your journey has just begun.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <span style="color:black"><strong>Will this practice improve my health?</strong></span>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Yes, of course! Regular practice of the Sky Technique™ is known to improve sleep, boost immunity, and lower stress and depression levels. You only need to read these testimonials of people who have benefitted from the workshop. Be sure to let your teacher know your ailments beforehand so they can give you the best and most customized experience!
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <span style="color:black"><strong>I have no stress. Why should I still join this workshop?</strong></span>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        If you’re not stressed, great! You’re living the best life. But consider this: Do you start saving money only when you’re running out of it? Or start exercising only when you’ve lost your health? No, right? So how about building those inner reserves of resilience and strength for times when you could need them? But hey, it's your call. You could wait till you are stressed and this workshop will still be around to help you.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+          <div id="registrationdetails" style="margin-top:15%;">
+               <div class="container" style="text-align:center" id="registration">
+                  <div id="registrationinside">
+                      <h1 style="width:80%;margin-left:auto;margin-right:auto;margin-top:3%">
+                            <strong>Registration Details</strong>
+                      </h1>
+                      <h2 style="width:80%;margin-left:auto;margin-right:auto;margin-top:3%">
+                           15th to 19th April,2023
+                      </h2>
+                      <h3 style="width:80%;margin:auto;margin-top:3%">
+                          Two batches to choose from 
+                     </h3>
+                     <div class="container row" style="width:80%;margin:auto;">
+                         
+                           <div class="batches col-lg" >
+                                <div class="container" style="margin-top:6%;">
+                                    <h3><strong>Morning</strong>
+                                        <br>6AM-8AM</h3>
+                                 <a href="tiny.cc/IITGYIF" target="_blank"><button type="button" class="btn btn-success" style="border-radius:50px;margin-top:10%; ">Register Now</button></a>
+                                </div>
+                            </div>
+                           <div class="batches col-lg">
+                                <div class="container" style="margin-top:6%;">
+                                   <h3><strong>Evening</strong>
+                                       <br>6PM-8PM</h3>
+                     
+                                    <a href="tiny.cc/IITGYIF" target="_blank"><button type="button" class="btn btn-success" style="border-radius:50px;margin-top:10%; ">Register Now</button></a>
+                                </div>
+                           </div>
+                        
+             
+                        </div>
+                        
+                  </div>
+                   
+                </div>
+            </div>
+        
+        
+        
+    </div>
+</div>
+    
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>If you are facing any problems registering through the Art of Living website,you need not worry</p>
+          <p>You can pay directly thourgh UPI and <strong>share the screenshot on Whatsapp(+91 7878004825)</strong></p>
+          <p>UPI Id : <strong>7878004825@upi</strong></p>Or 
+          <p>Scan and pay</p>
+          <img src="images/QR.png" style="height:10rem;">
+          <p>For Further Details:<br>
+            Whatsapp: <a href="http://wa.me/917878004825">+917878004825</a><br>
+            Email:yesplusiitguwahati@gmail.com<br>
+            Call:+917878004825<br>
+             <small><i>Partial Payments for booking seats for people who are facing any financial problems are also accepted.Call/Whatsappp to know more</i></small>
+          </p>
+          
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer" style="text-align:center">
+      <h5 style="text-align:center">For any queries,feel free to contact</h5>
+      
+     
+   
+     <i class="fas fa-phone" style="font-size:20px;"></i>
+        <i class="fab fa-whatsapp" style="font-size:25px;"></i>
+       
+
+
+
+
+
+        <h6>
+        <!-- &nbsp;			+917878004825, -->
+        &nbsp;+917637830658, +919085233042, +91 97223 04251
+        <!-- <br>&nbsp;+916900747635,&nbsp;+918638736009 -->
+    </h6>
+      <h6>Email&nbsp;	:&nbsp;	iitg.yesplus@gmail.com</h6>
+       <br>
+       <div class="row" style="width:150px;margin:auto">
+           <div class="col">
+       <a href="https://www.facebook.com/yesplusiitg/" style="color:white;"><i class="fab fa-facebook-f" style="font-size:20px;"></i></a>
+    </div>
+    <div class="col">
+
+       <a href="https://www.instagram.com/yes_plusiitg/" style="color:white;"><i class="fab fa-instagram" style="font-size:20px;"></i></a>
+    </div>
+    <div class="col">
+
+
+      <a href="https://youtube.com/channel/UCx92y89LII8lCR9zsLHOU4w" style="color:white;"><i class="fab fa-youtube" style="font-size:20px;"></i></a>
+    </div>
+    </div>
+           
+
+
+          
+  </div>
+</body>
+</html>
